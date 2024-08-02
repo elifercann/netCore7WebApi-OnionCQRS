@@ -1,6 +1,6 @@
 ﻿using Domain.Common;
 
-namespace Application.Repositories
+namespace Application.Interfaces.Repositories
 {
     public interface IWriteRepository<T> where T : class, IEntityBase, new()
     {

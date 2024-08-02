@@ -1,8 +1,8 @@
 ﻿using Api.Persistence.Context;
 using Api.Persistence.Repositories;
 using Api.Persistence.UnitOfWorks;
-using Application.Repositories;
-using Application.UnitOfWorks;
+using Application.Interfaces.Repositories;
+using Application.Interfaces.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

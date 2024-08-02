@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Infrastructure", "Api.I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Persistence", "Api.Persistence\Api.Persistence.csproj", "{BAE83761-DA8F-446F-8B1F-EF2BAF4F7E3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{75B23F7D-495B-409F-92FE-18DCD5CEA8A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{75B23F7D-495B-409F-92FE-18DCD5CEA8A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.AutoMapper", "Api.AutoMapper\Api.AutoMapper.csproj", "{FAA07281-E268-4668-9DE9-531D327CC5DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{75B23F7D-495B-409F-92FE-18DCD5CEA8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B23F7D-495B-409F-92FE-18DCD5CEA8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75B23F7D-495B-409F-92FE-18DCD5CEA8A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA07281-E268-4668-9DE9-531D327CC5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA07281-E268-4668-9DE9-531D327CC5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA07281-E268-4668-9DE9-531D327CC5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA07281-E268-4668-9DE9-531D327CC5DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

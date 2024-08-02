@@ -1,7 +1,7 @@
 ﻿using Api.Persistence.Context;
 using Api.Persistence.Repositories;
-using Application.Repositories;
-using Application.UnitOfWorks;
+using Application.Interfaces.Repositories;
+using Application.Interfaces.UnitOfWorks;
 
 namespace Api.Persistence.UnitOfWorks
 {
