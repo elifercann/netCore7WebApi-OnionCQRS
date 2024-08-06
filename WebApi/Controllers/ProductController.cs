@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
@@ -27,19 +27,19 @@ namespace WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpPost("CreateProduct")]
+        [HttpPost]
         public async Task<IActionResult> CreateProduct(CreateProductCommandRequest request)
         {
             await mediator.Send(request);
             return Ok();
         }
-        [HttpPost("UpdateProduct")]
+        [HttpPost]
         public async Task<IActionResult> UpdateProduct(UpdateProductCommandRequest request)
         {
             await mediator.Send(request);
             return Ok();
         }
-        [HttpPost("DeleteProduct")]
+        [HttpPost]
         public async Task<IActionResult> DeleteProduct(DeleteProductCommandRequest request)
         {
             await mediator.Send(request);
