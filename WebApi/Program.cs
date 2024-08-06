@@ -1,4 +1,5 @@
 using Api.Persistence;
+using Api.Infrastructure;
 using Application;
 using Api.AutoMapper;
 using Application.Exceptions;
@@ -19,6 +20,7 @@ builder.Configuration
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
 builder.Services.AddCustomMapper();
 
