@@ -4,6 +4,6 @@ namespace Application.Features.Auth.Exceptions
 {
     public class UserAlreadyExistException:BaseException
     {
-        public UserAlreadyExistException() :base("Aynı kullanıcı bilgilerine sahip kullanıcı bulunmaktadır.!") { }
+        public UserAlreadyExistException() :base("Aynı kullanıcı bilgilerine sahip kullanıcı bulunmaktadır.") { }
     }
 }

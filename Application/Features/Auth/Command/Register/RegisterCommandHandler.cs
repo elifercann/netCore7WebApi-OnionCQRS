@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Auth.Command
+namespace Application.Features.Auth.Command.Register
 {
     public class RegisterCommandHandler : BaseHandler, IRequestHandler<RegisterCommandRequest, Unit>
     {
@@ -31,10 +31,10 @@ namespace Application.Features.Auth.Command
 
             User user = mapper.Map<User, RegisterCommandRequest>(request);
             user.UserName = request.Email;
-            user.SecurityStamp=Guid.NewGuid().ToString();//aynı nesne üzerinde aynı anda değişiklik yapılmaması için gerekli
+            user.SecurityStamp = Guid.NewGuid().ToString();//aynı nesne üzerinde aynı anda değişiklik yapılmaması için gerekli
 
-            IdentityResult result=await userManager.CreateAsync(user,request.Password);
-            if (result.Succeeded) 
+            IdentityResult result = await userManager.CreateAsync(user, request.Password);
+            if (result.Succeeded)
             {
                 if (!await roleManager.RoleExistsAsync("user"))
                     await roleManager.CreateAsync(new Role
@@ -47,7 +47,7 @@ namespace Application.Features.Auth.Command
                 await userManager.AddToRoleAsync(user, "user");
             }
             return Unit.Value;
-            
+
         }
     }
 }
