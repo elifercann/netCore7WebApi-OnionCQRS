@@ -7,4 +7,3 @@ namespace Application.Features.Auth.Exceptions
         public EmailAddressShouldBeValidException() : base("Böyle bir email adresi bulunmamaktadır.") { }
     }
 }
-}
