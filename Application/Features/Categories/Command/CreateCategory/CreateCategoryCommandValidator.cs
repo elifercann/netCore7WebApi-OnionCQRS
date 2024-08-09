@@ -6,9 +6,9 @@ namespace Application.Features.Categories.Command.CreateCategory
     {
         public CreateCategoryCommandValidator()
         {
-            RuleFor(x => x.ParentId)
-          .NotEmpty()
-          .WithName("Eklenen üst modül");
+          //  RuleFor(x => x.ParentId)
+          //.NotEmpty()
+          //.WithName("Eklenen üst modül");
 
             RuleFor(x => x.Name)
                 .NotEmpty()
